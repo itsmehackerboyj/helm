@@ -1,0 +1,10 @@
+apiVersion: v2
+name: myhttpd  # Set the name of your Helm chart
+version: 2.2.0   # Set the version of your Helm chart
+appVersion: 1.0.0 # Set the version of your application (optional)
+description: A Helm chart for creating nginx
+type: application
+
+helm package myhttpd-0.1.0.tgz
+
+helm install --generate-name
